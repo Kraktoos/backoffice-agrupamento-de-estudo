@@ -67,7 +67,7 @@ if ($_SERVER['HTTP_HOST'] == 'web.colgaia.local') {
     $arrConfig['username'] = $env['DB_LOCAL_USER'];
     $arrConfig['password'] = $env['DB_LOCAL_PASS'];
     $arrConfig['dbname'] = $env['DB_LOCAL_NAME'];
-} else if ($_SERVER['HTTP_HOST'] == 'theactualworld.com') {
+} else if ($_SERVER['HTTP_HOST'] == 'admin.ae.diasrodrigo.com') {
     $arrConfig['username'] = $env['DB_PROD_USER'];
     $arrConfig['password'] = $env['DB_PROD_PASS'];
     $arrConfig['dbname'] = $env['DB_PROD_NAME'];
