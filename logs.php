@@ -30,7 +30,7 @@ if (!empty($userId)) {
 ?>
 
 <head>
-  <title>The Actual World - Logs</title>
+  <title>Agrupamento de Estudo - Logs</title>
   <style>
     .pathway-container {
       display: flex;

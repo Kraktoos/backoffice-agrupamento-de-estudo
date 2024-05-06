@@ -15,7 +15,7 @@ include_once 'get/userinfo.php';
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Admin - The Actual World</title>
+  <title>Admin - Agrupamento de Estudo</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -152,8 +152,8 @@ include_once 'get/userinfo.php';
   <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
     <a class="navbar-brand ps-3 d-flex align-items-center gap-2" href="index.php">
-      <img src="assets/img/logo.png" alt="The Actual World" style="height: 20px;" />
-      TAW Admin
+      <img src="assets/img/logo.png" alt="Agrupamento de Estudo" style="height: 20px;" />
+      AE Admin
     </a>
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i

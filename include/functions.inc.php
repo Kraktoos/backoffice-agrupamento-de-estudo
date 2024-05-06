@@ -15,7 +15,7 @@ function t($key)
 function render_page_title($title)
 {
     echo '
-    <script>document.title = "The Actual World - ' . t($title) . '";</script>
+    <script>document.title = "Agrupamento de Estudo - ' . t($title) . '";</script>
     ';
 }
 
