@@ -41,7 +41,7 @@ if ($_SERVER['HTTP_HOST'] == 'web.colgaia.local') {
     }
 } else if ($_SERVER['HTTP_HOST'] == 'admin.ae.diasrodrigo.com') {
     $arrConfig['url_site'] = $url_site_prod;
-    $arrConfig['dir_site'] = "/home/taw/htdocs/admin.ae.diasrodrigo.com/current";
+    $arrConfig['dir_site'] = "/home/admin_ae/htdocs/admin.ae.diasrodrigo.com/current";
 }
 
 // Carregar variáveis de ambiente
