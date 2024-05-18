@@ -85,7 +85,7 @@ function renderFormField($field, $config, $languages, $values = [])
         } else if ($config['type'] === 'date') {
             $input = "<input type='date' class='form-control' name='$field' value='{$values[$field]}' $required>";
         } else if ($config['type'] === 'datetime') {
-            $input = "<input type='datetime-local' class='form-control' name='$field' value='{$values[$field]}' $required>";
+            $input = "<input type='datetime-local' class='form-control' name='$field' value='" . date('Y-m-d\TH:i:s', strtotime($values[$field])) . "' $required>";
         } else if ($config['type'] === 'time') {
             $input = "<input type='time' class='form-control' name='$field' value='{$values[$field]}' $required>";
         } else if ($config['type'] === 'html') {
