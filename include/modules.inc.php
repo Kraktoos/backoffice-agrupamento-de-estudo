@@ -77,6 +77,7 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -96,6 +97,7 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -115,14 +117,17 @@ $modules = [
       'website' => [
         'name' => 'Website',
         'type' => 'text',
+        'required' => false
       ],
       'linkedin' => [
         'name' => 'LinkedIn',
         'type' => 'text',
+        'required' => false
       ],
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -156,6 +161,7 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -196,6 +202,7 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -258,14 +265,25 @@ $modules = [
       'id_utilizador' => [
         'name' => 'ID do Utilizador',
         'type' => 'number',
+        'foreign' => [
+          'module' => 'utilizadores',
+          'column' => 'id',
+          'highlighted_columns' => ['primeiro_nome', 'ultimo_nome']
+        ]
       ],
       'id_turma' => [
         'name' => 'ID da Turma',
         'type' => 'number',
+        'foreign' => [
+          'module' => 'turmas',
+          'column' => 'id',
+          'highlighted_columns' => ['nome']
+        ]
       ],
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -293,10 +311,16 @@ $modules = [
       'id_turma' => [
         'name' => 'ID da Turma',
         'type' => 'number',
+        'foreign' => [
+          'module' => 'turmas',
+          'column' => 'id',
+          'highlighted_columns' => ['nome']
+        ]
       ],
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
@@ -332,12 +356,14 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
   'utilizadores' => [
     'name' => "Utilizadores",
     'icon' => 'fa fa-user',
+    'show_add_button' => false,
     'columns' => [
       'id' => [
         'name' => 'ID',
@@ -363,9 +389,8 @@ $modules = [
       'ativo' => [
         'name' => 'Ativo',
         'type' => 'checkbox',
+        'required' => false
       ]
     ]
   ],
 ];
-
-?>

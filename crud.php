@@ -282,7 +282,7 @@ function renderTable($module, $fields, $data, $isDatatable = true, $showActions 
     }
     echo "</tbody></table>";
 
-    if ($showAddButton) {
+    if ($showAddButton && !isset($modules[$module]['show_add_button'])) {
         echo "<div class='d-flex justify-content-end'><a href='crud.php?module=$module&action=add' class='btn btn-success mt-2'>Adicionar Novo</a></div>";
     }
 }
